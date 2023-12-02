@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Instant Wp</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
+    <string name="edittext_text">91 XXXXX XXXXX</string>
+    <string name="enter_wp_number">Enter WP Number</string>
+    <string name="welcome">Welcome</string>
+    <string name="instant_wp">Instant WP</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="user_guide">1. Enter the recipient\'s mobile number with country code (91XXXXXXXXXX) and an optional message.\n2. Tap the \"Send\" button.\n3. The app will open WhatsApp with the entered contact number and pre-filled message.\n4. Directly send the message without saving the number.\n5. Enjoy hassle-free and efficient communication via WhatsApp.\n6. Developer Contact: harshbhanderi228@gmail.com</string>
+</resources>

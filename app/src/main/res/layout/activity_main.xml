@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- AppBar / Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instant_wp"
+            android:textColor="#333333"
+            android:textSize="24sp"
+             android:gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Enter WP Number Text -->
+    <TextView
+        android:id="@+id/textEnterWPNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_wp_number"
+        android:textColor="#333333"
+        android:textSize="20sp"
+         android:layout_below="@id/textWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/edittext_text"
+        android:inputType="phone"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_border"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/textEnterWPNumber"
+        app:layout_constraintBottom_toTopOf="@+id/openWhatsapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_message"
+        android:inputType="text"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_border"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:drawableLeft="@drawable/message_icon"
+        android:drawablePadding="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextPhoneNumber"
+        app:layout_constraintBottom_toTopOf="@+id/openWhatsapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/openWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/open_whatsapp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+         android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:layout_below="@id/editTextMessage"
+     />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openWhatsapp"
+         android:layout_marginTop="20dp"
+         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Instruction" />
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/grey"
+        android:layout_centerHorizontal="true"
+         android:textSize="16dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:text="@string/user_guide" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

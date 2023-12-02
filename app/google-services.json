@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "166590233498",
+    "project_id": "instant-wp-62a1b",
+    "storage_bucket": "instant-wp-62a1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166590233498:android:6a097251282b44af421823",
+        "android_client_info": {
+          "package_name": "com.bhanderi.instantwp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0-h9XMwOKBLzj3NlInMEytLeLCEiazM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
