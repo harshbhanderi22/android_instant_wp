@@ -1,0 +1,14 @@
+ads_loading_flg$true
+ads_loading_flg_activity$false
+remotelist_banner$ca-app-pub-3940256099942544/9214589741
+remote_banner$ca-app-pub-3940256099942544/9214589741
+fullscreen_preload$	ca-app-pub-3940256099942544/1033173712
+fullscreen_remotelist$	ca-app-pub-3940256099942544/1033173712
+splash$	ca-app-pub-3940256099942544/1033173712
+nativeid_start$ca-app-pub-3940256099942544/2247696110
+nativeBtnColor$FF5722
+nativeTextColor$FFFFFF
+nativeBgColor$000000
+appopenSplash$ca-app-pub-3940256099942544/2247696110
+appopen$ca-app-pub-3940256099942544/9257395921
+pubid$ca-app-pub-3940256099942544~3347511713
